@@ -18,13 +18,6 @@ int tiempo;
 vector<int> procesos;
 
 
-void imprimirProcesos(const vector<int>& procesos) {
-    cout << "\nProcesados: ";
-    for (int i = 0; i < procesos.size(); i++) {
-        cout << procesos[i] << " ";
-    }
-    cout << endl;
-}
 
 // Función C-SCAN
 int Cscan(int pistas, int headA, vector<int>& procesos, int sentido) {
@@ -169,9 +162,6 @@ int main() {
 
     cout << "\nTotal de longitud recorrida: " << resultado << endl;
     cout << "\nTotal de tiempo gastado (longitud*tiempo): " << tt << endl;
-
-    // Imprimir el estado final del vector de procesos
-    imprimirProcesos(procesos);
 
     return 0;
 }
